@@ -1,11 +1,43 @@
-//path: src/app/lh-sync-status-board/page.tsx
+// src/app/lh-sync-status-board/page.tsx
 
-export default function Home() {
+import PackageList from "@/components/PackageList";
+import { promises as fs } from "fs";
+
+interface SyncStatusData {
+  Id: string;
+  Title: string;
+  PackagePublishedOn: string;
+  LastSyncTimestamp: string;
+  State: string;
+  ErrorCount: number;
+  WarningCount: number;
+  InfoCount: number;
+  Issues: {
+    Id: string;
+    Severity: number;
+    Message: string;
+    Area: string;
+    Title: string;
+  }[];
+}
+
+export default async function Home() {
+  //get data from mock data using Node.js modules
+  const file = await fs.readFile(
+    process.cwd() +
+      // "/mock_data/sync-status-error-warning-success_7pkgs.json",
+      "/mock_data/sync-status-error-warning-success_14pkgs.json",
+    "utf8"
+  );
+  const jsonData: SyncStatusData[] = JSON.parse(file);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="text-4xl font-bold">
-        Learning Hub Synchronisation Status Board
+        Learning Hub Synchronisation Status
       </h1>
+      <PackageList jsonData={jsonData} />
+
       <div className="flex flex-col items-center justify-center">
         <h2>Work in Progres</h2>
 

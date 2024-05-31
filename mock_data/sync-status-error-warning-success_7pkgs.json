@@ -1,0 +1,211 @@
+[
+  {
+    "Id": "ed09cdce-a84e-456d-b271-c140f871adbc",
+    "Title": "Prototype POC NEW (update)",
+    "PackagePublishedOn": "2024-05-08T14:33:01.984+00:00",
+    "LastSyncTimestamp": "2024-05-09T10:45:23.366147+00:00",
+    "State": "Warning",
+    "ErrorCount": 0,
+    "WarningCount": 1,
+    "InfoCount": 0,
+    "Issues": [
+      {
+        "Id": "192f6a15-6e6e-4385-8f57-d2fe40538792",
+        "Severity": 2,
+        "Message": "Missing intro video in content",
+        "Area": "Introduction.OpeningAssets.Content.0.PlayerPayload",
+        "Title": "Introductie"
+      }
+    ]
+  },
+  {
+    "Id": "7b18ee79-8150-492e-a314-89d163d7e8ba",
+    "Title": "Wet zorg en dwang GHZ2",
+    "PackagePublishedOn": "2024-03-28T15:00:44.736+00:00",
+    "LastSyncTimestamp": "2024-04-23T12:50:00.11431+00:00",
+    "State": "Ok",
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "InfoCount": 0,
+    "Issues": []
+  },
+  {
+    "Id": "0dd38b89-58ac-46ca-8d8a-10508edbd36e",
+    "Title": "lh-poc-dev-test-rename01",
+    "PackagePublishedOn": "2024-05-14T14:54:17.493+00:00",
+    "LastSyncTimestamp": "2024-05-14T15:24:00.044112+00:00",
+    "State": "Error",
+    "ErrorCount": 1,
+    "WarningCount": 0,
+    "InfoCount": 0,
+    "Issues": [
+      {
+        "Id": "0dd38b89-58ac-46ca-8d8a-10508edbd36e",
+        "Severity": 3,
+        "Message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+        "Area": "General",
+        "Title": "lh-poc-dev-test-rename01"
+      }
+    ]
+  },
+  {
+    "Id": "fd09cdce-a84e-456d-b271-c140f871adbc",
+    "Title": "ZP REUSE POC",
+    "PackagePublishedOn": "2024-05-02T06:41:15.759+00:00",
+    "LastSyncTimestamp": "2024-05-14T15:24:00.044113+00:00",
+    "State": "Error",
+    "ErrorCount": 1,
+    "WarningCount": 0,
+    "InfoCount": 0,
+    "Issues": [
+      {
+        "Id": "bd0d69a8-157a-471f-af91-b62c12a53d5d",
+        "Severity": 3,
+        "Message": "LearningResourceType contains non-convertable type ''",
+        "Area": "Module.Metadata.LearningResourceType",
+        "Title": "Interview onderzoekend vermogen"
+      }
+    ]
+  },
+  {
+    "Id": "f09e9c7e-eee3-493d-bce3-03294202ae41",
+    "Title": "POC Prototype",
+    "PackagePublishedOn": "2024-04-09T11:48:14.944+00:00",
+    "LastSyncTimestamp": "2024-05-14T15:24:00.044113+00:00",
+    "State": "Error",
+    "ErrorCount": 1,
+    "WarningCount": 1,
+    "InfoCount": 0,
+    "Issues": [
+      {
+        "Id": "f09e9c7e-eee3-493d-bce3-03294202ae41",
+        "Severity": 3,
+        "Message": "SchoolType/Education property with value '3' not found in list (Initieel onderwijs Mbo, Initieel onderwijs Hbo, Bij- en nascholing)",
+        "Area": "Package.Metadata.SchoolType",
+        "Title": "POC Prototype"
+      },
+      {
+        "Id": "192f6a15-6e6e-4385-8f57-d2fe40538792",
+        "Severity": 2,
+        "Message": "Missing intro video in content",
+        "Area": "Introduction.OpeningAssets.Content.0.PlayerPayload",
+        "Title": "Introductie"
+      }
+    ]
+  },
+  {
+    "Id": "6c128f95-d928-43c5-b7d1-900c2b01b924",
+    "Title": "Prototype POC",
+    "PackagePublishedOn": "2023-06-28T10:48:23.785+00:00",
+    "LastSyncTimestamp": "2024-05-14T15:24:00.044112+00:00",
+    "State": "Error",
+    "ErrorCount": 4,
+    "WarningCount": 3,
+    "InfoCount": 0,
+    "Issues": [
+      {
+        "Id": "9447bc15-ead2-4002-8534-779ddba1a1d0",
+        "Severity": 2,
+        "Message": "Did not expect value 'null' for property Introduction.LearningGoals",
+        "Area": "Introduction.LearningGoals",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "9447bc15-ead2-4002-8534-779ddba1a1d0",
+        "Severity": 3,
+        "Message": "Did not expect value 'null' for property Introduction.Title",
+        "Area": "Introduction.Title",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "9447bc15-ead2-4002-8534-779ddba1a1d0",
+        "Severity": 2,
+        "Message": "Missing intro video in content",
+        "Area": "Introduction.OpeningAssets.Content.0.PlayerPayload",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "9447bc15-ead2-4002-8534-779ddba1a1d0",
+        "Severity": 2,
+        "Message": "Missing intro text in content",
+        "Area": "Introduction.OpeningAssets.Content.0.PlayerPayload",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "d2e08fc5-6ce6-42e1-8277-904803a2cccb",
+        "Severity": 3,
+        "Message": "LearningResourceType contains non-convertable type ''",
+        "Area": "Module.Metadata.LearningResourceType",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "d3b32fd4-d5b3-464c-bb0c-0ca59f4c1fc3",
+        "Severity": 3,
+        "Message": "Did not expect value 'null' for property Module.Title",
+        "Area": "Module.Title",
+        "Title": "Documentatie"
+      },
+      {
+        "Id": "d3b32fd4-d5b3-464c-bb0c-0ca59f4c1fc3",
+        "Severity": 3,
+        "Message": "LearningResourceType contains non-convertable type ''",
+        "Area": "ExtraMaterials.Metadata.LearningResourceType",
+        "Title": "Documentatie"
+      }
+    ]
+  },
+  {
+    "Id": "18140751-447a-49c0-8f5b-ba2c356b109c",
+    "Title": "Leerobjecten ZorgPad",
+    "PackagePublishedOn": "2023-02-06T13:30:25.379+00:00",
+    "LastSyncTimestamp": "2024-05-14T15:24:00.044112+00:00",
+    "State": "Error",
+    "ErrorCount": 3,
+    "WarningCount": 3,
+    "InfoCount": 0,
+    "Issues": [
+      {
+        "Id": "4b02ef9d-5af2-43cc-9282-147b0b3aa178",
+        "Severity": 2,
+        "Message": "Did not expect value 'null' for property Introduction.LearningGoals",
+        "Area": "Introduction.LearningGoals",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "4b02ef9d-5af2-43cc-9282-147b0b3aa178",
+        "Severity": 2,
+        "Message": "Missing intro video in content",
+        "Area": "Introduction.OpeningAssets.Content.0.PlayerPayload",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "4b02ef9d-5af2-43cc-9282-147b0b3aa178",
+        "Severity": 2,
+        "Message": "Missing intro text in content",
+        "Area": "Introduction.OpeningAssets.Content.0.PlayerPayload",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "777586b8-2a9e-446f-8175-bac6c7b222d4",
+        "Severity": 3,
+        "Message": "LearningResourceType contains non-convertable type ''",
+        "Area": "Module.Metadata.LearningResourceType",
+        "Title": "Introductie"
+      },
+      {
+        "Id": "2b5f78e0-b161-4025-a536-cbafef00b5d3",
+        "Severity": 3,
+        "Message": "Did not expect value 'null' for property Module.Title",
+        "Area": "Module.Title",
+        "Title": "Documentatie"
+      },
+      {
+        "Id": "2b5f78e0-b161-4025-a536-cbafef00b5d3",
+        "Severity": 3,
+        "Message": "LearningResourceType contains non-convertable type ''",
+        "Area": "ExtraMaterials.Metadata.LearningResourceType",
+        "Title": "Documentatie"
+      }
+    ]
+  }
+]
