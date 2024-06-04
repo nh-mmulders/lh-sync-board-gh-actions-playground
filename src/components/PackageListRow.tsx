@@ -28,7 +28,6 @@ export default function PackageListRow(props: PackageListRowProps) {
     <tr key={props.key}>
       <td>{props.row.Id}</td>
       <td>{props.row.Title}</td>
-      <td>{props.row.State}</td>
       {/* a message derived from state */}
       <td>{stateMessages[props.row.State]}</td>
       <td>{props.row.PackagePublishedOn}</td>

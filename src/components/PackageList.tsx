@@ -55,8 +55,8 @@ export default function PackageList(props: PackageListProps) {
           <tr>
             <th>Package ID</th>
             <th>Title</th>
-            <th>Disco Connector</th>
-            <th>Published On</th>
+            <th>Status</th>
+            <th>Published on</th>
             <th>Last Sync Attempt</th>
             <th>Errors</th>
             <th>Warnings</th>
