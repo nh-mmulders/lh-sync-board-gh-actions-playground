@@ -23,17 +23,27 @@ type PackageListRowProps = {
   };
 };
 
+// Input: time stamp from the json response in
+// ISO 8601 format, e.g	"2023-06-28T10:48:23.785+00:00"
+// Returns: "2023-06-28, 10:48:23"
+const formatDate = (isoDateTimeString: string): string => {
+  const [date, time] = isoDateTimeString.split("T");
+  const [hours, minutes] = time.split(":").slice(0, 2);
+  return `${date}, ${hours}:${minutes}`;
+};
+
 export default function PackageListRow(props: PackageListRowProps) {
+  const { key, row } = props;
   return (
-    <tr key={props.key}>
-      <td>{props.row.Id}</td>
-      <td>{props.row.Title}</td>
+    <tr key={key}>
+      <td>{row.Id}</td>
+      <td>{row.Title}</td>
       {/* a message derived from state */}
-      <td>{stateMessages[props.row.State]}</td>
-      <td>{props.row.PackagePublishedOn}</td>
-      <td>{props.row.LastSyncTimestamp}</td>
-      <td>{props.row.ErrorCount}</td>
-      <td>{props.row.WarningCount}</td>
+      <td>{stateMessages[row.State]}</td>
+      <td>{formatDate(row.PackagePublishedOn)}</td>
+      <td>{formatDate(row.LastSyncTimestamp)}</td>
+      <td>{row.ErrorCount}</td>
+      <td>{row.WarningCount}</td>
     </tr>
   );
 }
