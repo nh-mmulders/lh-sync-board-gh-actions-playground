@@ -19,11 +19,11 @@
 
 on:
   push:
-    # branches: [ "main" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: lh-sync-status-board    # set this to your application's name
+  AZURE_WEBAPP_NAME: lh-sync-status-board-app    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './.next'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '20.x'                # set this to the node version to use
 
@@ -51,7 +51,7 @@ jobs:
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v4
       with:
-        name: ${{env.AZURE_WEBAPP_NAME}}-app
+        name: ${{env.AZURE_WEBAPP_NAME}}
         path: ${{env.AZURE_WEBAPP_PACKAGE_PATH}}
 
   deploy:
@@ -67,7 +67,7 @@ jobs:
     - name: Download artifact from build job
       uses: actions/download-artifact@v4.1.8
       with:
-        name: ${{env.AZURE_WEBAPP_NAME}}-app
+        name: ${{env.AZURE_WEBAPP_NAME}}
 
     - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp
